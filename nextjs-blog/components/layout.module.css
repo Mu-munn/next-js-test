@@ -1,0 +1,7 @@
+.container {
+    background-color: aquamarine;
+    /* max-width: 50rem; */
+    /* padding: 0 1rem; */
+    margin: 0 auto;
+    width: 40%;
+}
