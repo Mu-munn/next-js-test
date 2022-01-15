@@ -3,8 +3,8 @@ import { Flex, Heading, Box, Spacer, Button, Center, Divider } from "@chakra-ui/
 export default function SideNav() {
   return (
     <Box position="sticky" top="0" zIndex="sticky" bgColor="white">
-      <Flex h="70px" bg="" color="">
-        <Box p="20px" ml={20}>
+      <Flex h="70px" bg="" color="" alignItems="center">
+        <Box pl="3%">
           <Heading size="md">偽CORPBOOK</Heading>
         </Box>
         <Spacer />
@@ -14,9 +14,9 @@ export default function SideNav() {
               ログイン
             </Heading>
           </Center>
-          <Center mr={20}>
+          <Center pr={20}>
             <Button colorScheme='blue' 
-            width="130px"
+            width="10px"
             borderRadius={50}
             >無料会員登録</Button>
           </Center>
