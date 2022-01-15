@@ -1,21 +1,19 @@
-import Link from 'next/link'
-import Head from 'next/head'
-import Script from 'next/script' 
-import Layout from '../../components/layout'
+import { Flex } from "@chakra-ui/react";
+import { FaGithub } from "react-icons/fa";
 
-export default function FirstPost() {
+export default function Home() {
   return (
-    <Layout>
-      <Head>
-        <title>First Post</title>
-      </Head>
-      
-      <h1>First Post</h1>
-      <h2>
-        <Link href="/">
-          <a>Back to Home.</a>
-        </Link>
-      </h2>
-    </Layout>
-  )
+    <Flex
+      m="10"
+      w="100px"
+      h="10vh"
+      bg="blue.500"
+      boxShadow="md"
+      rounded="lg"
+      align="center"
+      justify="center"
+    >
+      <FaGithub color="white" size="3em" />
+    </Flex>
+  );
 }
