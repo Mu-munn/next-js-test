@@ -1,4 +1,13 @@
-import { Flex, Heading, Box, Spacer, Button, Center, Divider } from "@chakra-ui/react";
+import {
+  Flex,
+  Heading,
+  Box,
+  Spacer,
+  Button,
+  Center,
+  Divider,
+} from "@chakra-ui/react";
+import Link from "next/link";
 
 export default function SideNav() {
   return (
@@ -14,11 +23,12 @@ export default function SideNav() {
               ログイン
             </Heading>
           </Center>
-          <Center pr={20}>
-            <Button colorScheme='blue' 
-            width="10px"
-            borderRadius={50}
-            >無料会員登録</Button>
+          <Center pr="1px">
+            <Button colorScheme="blue" size="sm" borderRadius={50}>
+              <Link href="/pages/posts/first-post.tsx">
+                <a>遷移</a>
+              </Link>
+            </Button>
           </Center>
 
           {/* <Heading size="xm" mr={20}>無料会員登録</Heading> */}
