@@ -26,7 +26,7 @@ export default function SideNav() {
           <Center pr="1px">
             <Button colorScheme="blue" size="sm" borderRadius={50}>
               <Link href="/pages/posts/first-post.tsx">
-                <a>遷移</a>
+                遷移
               </Link>
             </Button>
           </Center>

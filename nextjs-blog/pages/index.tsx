@@ -1,19 +1,34 @@
-import { Flex, Divider, Center, Spacer, Image, Box } from "@chakra-ui/react";
-import { FaBell } from "react-icons/fa";
-import SideNav from "../components/navBar";
-import Box1 from "../components/box1";
-import Row1 from "../components/row1"
-import SearchBox from "../components/serchBox";
-import BlogPostWithImage from "../components/BlogPostWithImage";
-import ProfileCard from "../components/ProfileCard";
-import JobDescription from "../components/JobDescription";
+import { NextPage, InferGetStaticPropsType } from 'next';
+import { Box, Link } from '@chakra-ui/react';
+import { getAllPosts } from '..//utils/api';
 
-export default function Home() {
-  return (
-    <Box h="1000px">
-      <SideNav />
-      <Box1/>
-      <Row1/>
-    </Box>
-  );
-}
+type Props = InferGetStaticPropsType<typeof getStaticProps>;
+
+export const getStaticProps = async () => {
+  const allPosts = getAllPosts(['slug', 'title', 'date', 'tags']);
+
+  return {
+    props: { allPosts },
+  };
+};
+
+const Home: NextPage<Props> = ({ allPosts }) => (
+  <ul>
+    {allPosts?.map((post) => (
+      <Box key={post.slug} mt={10}>
+        <li>
+          <Link href={`/docs/${post.slug}`}>
+            <a>{post.title}</a>
+          </Link>
+          <p>{post.date}</p>
+          <ul>
+            {post.tags?.map((tag) => (
+              <li key={tag}>{tag}</li>
+            ))}
+          </ul>
+        </li>
+      </Box>
+    ))}
+  </ul>
+);
+export default Home;
