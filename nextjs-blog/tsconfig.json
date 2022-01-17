@@ -23,7 +23,7 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx"
-, "components/SideNav.js"  ],
+, "components/SideNav.js", "components/navBar.js"  ],
   "exclude": [
     "node_modules"
   ]

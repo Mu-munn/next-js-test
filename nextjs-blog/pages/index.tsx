@@ -1,34 +1,23 @@
 import { NextPage, InferGetStaticPropsType } from 'next';
-import { Box, Link } from '@chakra-ui/react';
+import { Box, Center, Heading, Link } from '@chakra-ui/react';
 import { getAllPosts } from '..//utils/api';
+import Particles from 'react-particles-js';
+import { NavMenu } from '../components/NavbarWithSubmenu 2/NavMenu';
+import { NavContent } from '../components/NavbarWithSubmenu 2/NavContent';
+import AppBar from '../components/appBar';
+import BackGround from '../components/backGround';
+import Feature1 from '../components/feature1';
 
-type Props = InferGetStaticPropsType<typeof getStaticProps>;
 
-export const getStaticProps = async () => {
-  const allPosts = getAllPosts(['slug', 'title', 'date', 'tags']);
-
-  return {
-    props: { allPosts },
-  };
-};
-
-const Home: NextPage<Props> = ({ allPosts }) => (
-  <ul>
-    {allPosts?.map((post) => (
-      <Box key={post.slug} mt={10}>
-        <li>
-          <Link href={`/docs/${post.slug}`}>
-            <a>{post.title}</a>
-          </Link>
-          <p>{post.date}</p>
-          <ul>
-            {post.tags?.map((tag) => (
-              <li key={tag}>{tag}</li>
-            ))}
-          </ul>
-        </li>
-      </Box>
-    ))}
-  </ul>
-);
-export default Home;
+export default function Home() {
+  return (
+    <Box h="">
+      {/* <AppBar /> */}
+      {/* <BackGround/> */}
+      <Center>
+      <Feature1/>
+      </Center>
+      
+    </Box>
+  );
+}
