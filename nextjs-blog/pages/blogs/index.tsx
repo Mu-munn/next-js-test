@@ -22,7 +22,7 @@ const BlogPage: NextPage<Props> = ({ allPosts }) => (
     <AppBar />
     <VStack>
       <Center h="250px" w="100%" bg="">
-        <Heading textAlign="center">初めまして、向川原　悠貴です。</Heading>
+        <Heading textAlign="center">初めまして、向川原 悠貴です。</Heading>
       </Center>
       <Center>
         <VStack spacing="30px" bg="white" w="70%" h="" top="300px" position="absolute" boxShadow='xl' p='9' rounded='md' >

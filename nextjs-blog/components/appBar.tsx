@@ -36,10 +36,10 @@ export default function AppBar({ children, title, description }: Props) {
                 <Modal isOpen={isOpen} onClose={onClose}>
                     <ModalOverlay />
                     <ModalContent>
-                        <ModalHeader>M現在、Flutter・NextJSでのお仕事を探しております！！</ModalHeader>
+                        <ModalHeader>現在、Flutter・NextJSでのお仕事を探しております！！</ModalHeader>
                         <ModalCloseButton />
                         <ModalBody>
-                            {/*  <Lorem count={2} /> */}
+                             {/* <Lorem count={2} /> */}
                         </ModalBody>
 
                         <ModalFooter>
@@ -54,37 +54,17 @@ export default function AppBar({ children, title, description }: Props) {
                 <Spacer></Spacer>
                 <Box p={2}>
                     <Stack direction='row' spacing={4}>
-                        <HStack spacing='10px'>
-                            <HStack>
-                                {/* <IconButton
-                                    //  boxShadow='xl'
-                                    rounded='md'
-                                    variant='outline'
-                                    colorScheme='teal'
-                                    aria-label='Call Sage'
-                                    fontSize='20px'
-                                    icon={<FaBell />}
-                                /> */}
-                                {/* <Icon
-                                position="absolute"
-                                 viewBox='0 0 200 200' 
-                                 color='red.500'
-                                top="0"
-                                right="10"
-                                >
-                                    <path
-                                        fill='currentColor'
-                                        d='M 100, 100 m -75, 0 a 75,75 0 1,0 150,0 a 75,75 0 1,0 -150,0'
-                                    />
-                                </Icon> */}
-
-                            </HStack>
-
-
-                            <IconButton
-                                //boxShadow='xl'
+                        <HStack spacing='1px'>
+                            <Button colorScheme='teal' variant='ghost'>
+                                ABOUTME
+                            </Button>
+                            <Button colorScheme='teal' variant='ghost'>
+                                WORKS
+                            </Button>
+                            {/* <IconButton
+                                boxShadow='xl'
                                 rounded='md'
-                                 variant='outline'
+                                variant='outline'
                                 colorScheme='teal'
                                 aria-label='Call Sage'
                                 fontSize='20px'
@@ -93,40 +73,26 @@ export default function AppBar({ children, title, description }: Props) {
                                     handleClick
                                 }
                             />
+
                             <IconButton
-                                // boxShadow='xl'
+                                boxShadow='xl'
                                 rounded='md'
                                 variant='outline'
                                 colorScheme='teal'
                                 aria-label='Call Sage'
                                 fontSize='20px'
                                 icon={<FaTwitter />}
-                            />
-                            <IconButton
-                            
-                                //  boxShadow='xl'
-                                rounded='md'
-                                variant='outline'
-                                colorScheme='teal'
-                                aria-label='Call Sage'
-                                fontSize='20px'
-                                icon={<FaFacebook />}
-                            />
-                            {/* <Button colorScheme='teal' variant='outline' boxShadow='xl' rounded='md' bg='white' h="44px">
-                連絡する
-            </Button> */}
+                            /> */}
+
                         </HStack>
-                        {/* <Button leftIcon={<FaGithub />} colorScheme='teal' variant='solid'>
-                            Email
-                        </Button> */}
+
                         <Button
-                         rightIcon={<FaFax />} 
-                        colorScheme='teal' 
+                            rightIcon={<FaFax />}
+                            colorScheme='teal'
                         //variant='outline'
                         >
                             ご連絡
                         </Button>
-
                     </Stack>
                 </Box>
             </Flex>

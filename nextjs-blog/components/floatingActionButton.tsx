@@ -1,5 +1,5 @@
 import { Box, Button, Center, Heading, HStack, Icon, IconButton, VStack } from "@chakra-ui/react";
-import { FaGithub, FaTwitter, FaFacebook, FaBell ,FaChevronCircleUp} from "react-icons/fa";
+import { FaGithub, FaTwitter, FaFacebook, FaBell, FaChevronCircleUp } from "react-icons/fa";
 
 
 export default function FloatingActrionButton() {
@@ -8,12 +8,33 @@ export default function FloatingActrionButton() {
         window.open('https://github.com/Mu-munn')
     }
     return (
-        <Box position="fixed" right="20px" bottom="20px">
+        <Box position="fixed" right="20px" bottom="40px">
 
             <VStack spacing='10px'>
+                <IconButton
+                    size="md"
+                    boxShadow='xl'
+                    rounded='md'
+                    variant='outline'
+                    colorScheme='black'
+                    aria-label='Call Sage'
+                    fontSize='20px'
+                    icon={<FaGithub />}
+                />
+
+                <IconButton
+                    size="md"
+                    boxShadow='xl'
+                    rounded='md'
+                    variant='outline'
+                    colorScheme='twitter'
+                    aria-label='Call Sage'
+                    fontSize='20px'
+                    icon={<FaTwitter />}
+                />
                 <HStack>
                     <IconButton
-                    size="lg"
+                        size="lg"
                         //  boxShadow='xl'
                         rounded='md'
                         //variant='outline'
@@ -22,18 +43,7 @@ export default function FloatingActrionButton() {
                         fontSize='20px'
                         icon={<FaChevronCircleUp />}
                     />
-                    {/* <Icon
-                                position="absolute"
-                                 viewBox='0 0 200 200' 
-                                 color='red.500'
-                                top="0"
-                                right="10"
-                                >
-                                    <path
-                                        fill='currentColor'
-                                        d='M 100, 100 m -75, 0 a 75,75 0 1,0 150,0 a 75,75 0 1,0 -150,0'
-                                    />
-                                </Icon> */}
+
 
                 </HStack>
                 {/* <Button colorScheme='teal' variant='outline' boxShadow='xl' rounded='md' bg='white' h="44px">
