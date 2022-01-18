@@ -1,9 +1,13 @@
 import { Box, Button, Center, Heading, HStack, Icon, IconButton, VStack } from "@chakra-ui/react";
+import Router from "next/router";
 import { AiFillHeart, AiOutlineHeart } from 'react-icons/ai'
 import { MdPhone } from "react-icons/md";
 import SnsLinks from "./snsLinks";
 
 export default function Feature1() {
+    const handler = (path) => {
+        Router.push(path)
+    }
     return (
         <VStack h="100vh" bg="#38555a" w="100%">
             <VStack bg="white" h="100%" w="60%" position="relative">
@@ -16,7 +20,7 @@ export default function Feature1() {
                         fontSize='20px'
                         icon={<MdPhone />}
                     /> */}
-                    <SnsLinks/>
+                    <SnsLinks />
                 </Box>
 
                 <VStack color="#38555a" spacing="30px">
@@ -24,7 +28,8 @@ export default function Feature1() {
                         <Heading >MUKAIGAWARA</Heading>
                         <Heading >YUUKI.</Heading>
                     </Box>
-                    <Button colorScheme='teal' variant='outline' h="85px" w="370px" boxShadow='xl' p='6' rounded='md' bg='white' >
+                    <Button colorScheme='teal' variant='outline' h="85px" w="370px" boxShadow='xl' p='6' rounded='md' bg='white'
+                        onClick={() => handler('./blogs')}>
                         向川原 悠貴　について
                     </Button>
                     <Button colorScheme='teal' variant='outline' h="85px" w="370px" boxShadow='xl' p='6' rounded='md' bg='white' >

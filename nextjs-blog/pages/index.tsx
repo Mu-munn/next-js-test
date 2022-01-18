@@ -17,7 +17,7 @@ export default function Home() {
       <Center>
       <Feature1/>
       </Center>
-      
+      {/* <Link href={'./blogs'}>a</Link> */}
     </Box>
   );
 }
