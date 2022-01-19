@@ -56,7 +56,8 @@ export default function AppBar({ children, title, description }: Props) {
                 <Box p={2}>
                     <Stack direction='row' spacing={4}>
                         <HStack spacing='1px'>
-                            <Button colorScheme='teal' variant='ghost'>
+                            <Button colorScheme='teal' variant='ghost'
+                            onClick={() => router.push("/")}>
                                 ABOUTME
                             </Button>
                             <Button colorScheme='teal' variant='ghost'

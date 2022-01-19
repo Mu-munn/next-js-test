@@ -7,7 +7,7 @@ import FloatingActrionButton from '../components/floatingActionButton';
 type Props = InferGetStaticPropsType<typeof getStaticProps>;
 
 export const getStaticProps = async () => {
-  const allPosts = getAllPosts(['slug', 'title', 'date', 'tags']);
+  const allPosts = getAllPosts(['slug', 'title', 'date', 'tags','dis_short']);
 
   return {
     props: { allPosts },
@@ -22,14 +22,14 @@ const BlogPage: NextPage<Props> = ({ allPosts }) => (
     <AppBar />
     <VStack>
       <Center h="250px" w="100%" bg="">
-        <Heading textAlign="center">初めまして、向川原 悠貴です。</Heading>
+        <Heading textAlign="center">ABOUT ME</Heading>
       </Center>
       <Center>
         <VStack spacing="30px" bg="white" w="70%" h="" top="300px" position="absolute" boxShadow='xl' p='9' rounded='md' >
           <Tabs variant='enclosed' w="100%">
             <TabList>
-              <Tab>自己紹介</Tab>
-              <Tab>スキル</Tab>
+              {/* <Tab>自己紹介</Tab> */}
+              {/* <Tab>スキル</Tab> */}
               {/* <Tab>インターンにて</Tab> */}
             </TabList>
             <TabPanels>
@@ -38,7 +38,7 @@ const BlogPage: NextPage<Props> = ({ allPosts }) => (
                   <Avatar size='2xl' name='Segun Adebayo' src='./images/profile.jpg'></Avatar>
                 </Center>
 
-                <Heading textAlign="center">ABOUT ME</Heading>
+                <Heading textAlign="center">初めまして、向川原 悠貴です。</Heading>
                 <Box h="50px"></Box>
                 <Text>大学を目指して浪人中、Webサイト制作にハマる。それを機に専門学校へ進学（四年過程の学科で、現在第二学年）。
                   現在はインターン先にてFlutterによるアプリ開発、Next.jsによるWeb開発をさせて頂いております！！
@@ -58,6 +58,88 @@ const BlogPage: NextPage<Props> = ({ allPosts }) => (
 
                 <Box h="50px"></Box>
                 <Text>あと、好きなラーメン屋はうまやです^^b</Text>
+
+                <Box h="50px"></Box>
+                <Heading textAlign="center">Flutter</Heading>
+                <Divider></Divider>
+                <Box h="50px"></Box>
+
+                <Text>Flutterは、独学で一年、インターン先にて三ヶ月ほど触っており、一番好きなフレームワークでもあります。
+                  個人開発では、状態管理にRiverpod、StateNotifier、Freezedを使うことが多いです。またMVCモデルでほとんど作っています。
+                </Text>
+                <Box h="30px"></Box>
+                <Text>もともと一年ほど独学でFlutterをしていたのですが、スキルアップのために参加したインターンにて、革命が起きました。インターンでの経験談は次のタブに記載しておりますので、
+                  ぜひご覧ください！
+                </Text>
+                <Box h="30px"></Box>
+                <Text>また、学内でFlutterによるアプリ開発チームを立ち上げ、勉強会やアプリ開発の企画、運営をさせていただいております。</Text>
+
+                <Box h="50px"></Box>
+                <Heading textAlign="center">React・Next.js</Heading>
+                <Divider></Divider>
+                <Box h="50px"></Box>
+
+                <Text>もともとNode.js(Express)が好きで、jsを独学していたのがきっかけで始めました！こちらも、独学一年＋インターン先にて少し触らせてもらっています。
+                  今一番ハマっており、毎日寝る寸前までやっています・・・
+
+                </Text>
+                <Box h="30px"></Box>
+                <Text>最近だと、UIコンポーネントにChakraUIを使うのがマイブームです！笑このポートフォリオサイトも、Next.js(ts)とChakraUIによって作られております。
+                  詳細は、ぜひWORKSの成果物よりご覧ください！
+                </Text>
+
+
+                <Box h="50px"></Box>
+                <Heading textAlign="center">その他得意なもの</Heading>
+                {/* <Divider></Divider> */}
+                <Box h="50px"></Box>
+
+                <Table variant='simple'>
+                  {/* <TableCaption>Imperial to metric conversion factors</TableCaption> */}
+                  <Thead>
+                    <Tr>
+                      <Th> スキル</Th>
+                      <Th>概要</Th>
+                      {/* <Th isNumeric>multiply by</Th> */}
+                    </Tr>
+                  </Thead>
+                  <Tbody>
+                    <Tr>
+                      <Td>Git・GitHub</Td>
+                      <Td>インターンでも使用していましたので、基本操作は大丈夫かと思います。</Td>
+                      {/* <Td isNumeric>25.4</Td> */}
+                    </Tr>
+                    <Tr>
+                      <Td>FireBase</Td>
+                      <Td>こちらもインターンの開発したアプリにて使っておりました。また個人制作でも使用します。</Td>
+                      {/* <Td isNumeric>30.48</Td> */}
+                    </Tr>
+                    <Tr>
+                      <Td>Html・Css</Td>
+                      <Td>基本的なコーディングはできます。</Td>
+                      {/* <Td isNumeric>0.91444</Td> */}
+                    </Tr>
+                    <Tr>
+                      <Td>SQL</Td>
+                      <Td>FireBaseを使うことの方が多いですが、SQLもたまに使います。</Td>
+                      {/* <Td isNumeric>0.91444</Td> */}
+                    </Tr>
+                  </Tbody>
+                  {/* <Tfoot>
+                    <Tr>
+                      <Th>To convert</Th>
+                      <Th>into</Th>
+                      <Th isNumeric>multiply by</Th>
+                    </Tr>
+                  </Tfoot> */}
+                </Table>
+
+                <Box h="50px"></Box>
+                <Heading textAlign="center">独学・授業で学んだこと</Heading>
+                {/* <Divider></Divider> */}
+                <Box h="50px"></Box>
+                <Text textAlign="center">C・C#・Java・php・OracleDB・Linux・WordPress・Unity</Text>
+
               </TabPanel>
 
               <TabPanel>

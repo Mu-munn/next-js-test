@@ -30,6 +30,7 @@ export const getPostBySlug = (slug: string, fields: string[] = []) => {
     slug: string;
     content: string;
     title: string;
+    dis_short : string;
     date: string;
     tags: string[];
   };
@@ -38,6 +39,7 @@ export const getPostBySlug = (slug: string, fields: string[] = []) => {
     slug: '',
     content: '',
     title: '',
+    dis_short: '',
     date: '',
     tags: [],
   };
@@ -52,7 +54,7 @@ export const getPostBySlug = (slug: string, fields: string[] = []) => {
       items[field] = content;
     }
 
-    if (field === 'title' || field === 'date' || field === 'tags') {
+    if (field === 'title' || field === 'date' || field === 'tags' || field === 'dis_short') {
       items[field] = data[field];
     }
   });
