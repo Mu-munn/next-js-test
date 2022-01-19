@@ -1,6 +1,7 @@
 import { Box, Button, Center, Divider, Flex, Heading, Spacer, Stack, Image, IconButton, VStack, HStack, Icon, Circle, Modal, ModalBody, ModalCloseButton, ModalContent, ModalFooter, ModalHeader, ModalOverlay, useDisclosure } from '@chakra-ui/react'
 import Head from 'next/head'
 import Link from 'next/link'
+import router from 'next/router'
 import { FaGithub, FaTwitter, FaFacebook, FaFax, FaBell, FaExternalLinkAlt } from "react-icons/fa"
 import { MdBuild } from 'react-icons/md'
 
@@ -30,7 +31,7 @@ export default function AppBar({ children, title, description }: Props) {
                     variant='solid'
                     left="1px"
                     top="1px">
-                    現在、Flutter・NextJSでのお仕事を探しております！！
+                    現在、Flutter・NextJSでのインターンを探しております！！
 
                 </Button>
                 <Modal isOpen={isOpen} onClose={onClose}>
@@ -58,7 +59,9 @@ export default function AppBar({ children, title, description }: Props) {
                             <Button colorScheme='teal' variant='ghost'>
                                 ABOUTME
                             </Button>
-                            <Button colorScheme='teal' variant='ghost'>
+                            <Button colorScheme='teal' variant='ghost'
+                            onClick={() => router.push("/blogs")}
+                            >
                                 WORKS
                             </Button>
                             {/* <IconButton
