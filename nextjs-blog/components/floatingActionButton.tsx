@@ -20,6 +20,7 @@ export default function FloatingActrionButton() {
                     aria-label='Call Sage'
                     fontSize='20px'
                     icon={<FaGithub />}
+                    onClick={handleClick}
                 />
 
                 <IconButton
