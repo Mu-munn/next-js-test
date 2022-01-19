@@ -57,7 +57,7 @@ const BlogPage: NextPage<Props> = ({ allPosts }) => (
                 <Text>休日や空いた時間には、個人アプリの開発やWebアプリ開発をしたり、qiitaやzennなどの記事を書いたり読んだり、ギターを弾いたりしています〜！</Text>
 
                 <Box h="50px"></Box>
-                <Text>あと、好きなラーメン屋はうまやです^^b</Text>
+                <Text>あと、好きなラーメン屋はうまやです。</Text>
 
                 <Box h="50px"></Box>
                 <Heading textAlign="center">Flutter</Heading>
