@@ -36,15 +36,20 @@ export default function FloatingActrionButton() {
                     aria-label='Call Sage'
                     fontSize='20px'
                     icon={<FaTwitter />}
+                    onClick={
+                        (e) => {
+                            e.preventDefault()
+                            window.open('https://twitter.com/MukaigawaraYuki')
+                        }}
                 />
                 <HStack>
-                    <IconButton
+                    {/* <IconButton
                         // _focus={{_focus: "none"}} //周りの青いアウトラインが気になる場合に消す方法
                         mb={10}
                         aria-label="DarkMode Switch"
                         icon={colorMode === 'light' ? <FaFacebook /> : <FaGithub />} //自分の好みでSunアイコンはreact-iconsを使用しています
                         onClick={toggleColorMode}
-                    />
+                    /> */}
                     <IconButton
                         size="lg"
                         //  boxShadow='xl'
