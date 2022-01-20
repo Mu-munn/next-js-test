@@ -31,7 +31,7 @@ export default function AppBar({ children, title, description }: Props) {
                     variant='solid'
                     left="1px"
                     top="1px">
-                    現在、Flutter・NextJSでのインターンを探しております！！
+                    現在、Flutter・NextJSでのアルバイトを探しております！！
 
                 </Button>
                 <Modal isOpen={isOpen} onClose={onClose}>
