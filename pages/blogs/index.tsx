@@ -16,7 +16,7 @@ export const getStaticProps = async () => {
 
 const Home: NextPage<Props> = ({ allPosts }) => (
     <Box>
-        <Box Box bg="gray.100" w="full" h="1000vh" >
+        <Box Box bg="gray.100" w="full" h="200vh" >
             <FloatingActrionButton />
             <AppBar />
             <Center h="250px" w="100%" bg="">
