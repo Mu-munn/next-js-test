@@ -20,18 +20,19 @@ export default function AppBar({ children, title, description }: Props) {
     return (
         <Box position="sticky" top="0" zIndex="sticky" bg="white" w="100%" h="60px" boxShadow="xl">
             <Flex direction="row" color="#38555a" align="center">
-                <Box ml="" w="" bg="" p={2}>
+                <Box ml="" w="" bg="" p={2} onClick={() => router.push("/")}>
                     {/* <Heading size="lg">MUKAIGAWARA</Heading> */}
                     <Image src="./images/logo.png" boxSize="40px" objectFit="contain"></Image>
                 </Box>
                 <Button
                     // onClick={onOpen}
                     // leftIcon={<FaExternalLinkAlt />}
+                    onClick={() => router.push("/contact")}
                     colorScheme='teal'
                     variant='solid'
                     left="1px"
                     top="1px">
-                    すみません、未完成です！絶賛開発中＾＾b
+                    現在、Flutter・NextJSでのお仕事を探しております！！
 
                 </Button>
                 <Modal isOpen={isOpen} onClose={onClose}>
@@ -40,7 +41,7 @@ export default function AppBar({ children, title, description }: Props) {
                         <ModalHeader>現在、Flutter・NextJSでのお仕事を探しております！！</ModalHeader>
                         <ModalCloseButton />
                         <ModalBody>
-                             {/* <Lorem count={2} /> */}
+                            {/* <Lorem count={2} /> */}
                         </ModalBody>
 
                         <ModalFooter>
@@ -57,11 +58,11 @@ export default function AppBar({ children, title, description }: Props) {
                     <Stack direction='row' spacing={4}>
                         <HStack spacing='1px'>
                             <Button colorScheme='teal' variant='ghost'
-                            onClick={() => router.push("/")}>
+                                onClick={() => router.push("/")}>
                                 ABOUTME
                             </Button>
                             <Button colorScheme='teal' variant='ghost'
-                            onClick={() => router.push("/blogs")}
+                                onClick={() => router.push("/blogs")}
                             >
                                 WORKS
                             </Button>
@@ -90,10 +91,11 @@ export default function AppBar({ children, title, description }: Props) {
 
                         </HStack>
 
+
                         <Button
                             rightIcon={<FaFax />}
                             colorScheme='teal'
-                        //variant='outline'
+                            onClick={() => router.push("/contact")}
                         >
                             ご連絡
                         </Button>

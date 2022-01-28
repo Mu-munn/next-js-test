@@ -17,7 +17,7 @@ export const getStaticProps = async () => {
 
 const BlogPage: NextPage<Props> = ({ allPosts }) => (
 
-  <Box bg="gray.100" w="full" h="1000vh" >
+  <Box bg="gray.100" w="full" h="350vh" >
     <FloatingActrionButton />
     <AppBar />
     <VStack>
@@ -40,8 +40,8 @@ const BlogPage: NextPage<Props> = ({ allPosts }) => (
 
                 <Heading textAlign="center">初めまして、向川原 悠貴です。</Heading>
                 <Box h="50px"></Box>
-                <Text>大学を目指して浪人中、Webサイト制作にハマる。それを機に専門学校へ進学（四年過程の学科で、現在第二学年）。
-                  現在はインターン先にてFlutterによるアプリ開発、Next.jsによるWeb開発をさせて頂いております！！
+                <Text>大学を目指して浪人中、Webサイト制作にハマる。それを機に専門学校へ進学。
+                  現在はインターン先にてFlutterによるアプリ開発や、Next.jsによるWeb開発をさせて頂いております！！
 
                 </Text>
                 <Text>
@@ -51,10 +51,11 @@ const BlogPage: NextPage<Props> = ({ allPosts }) => (
                 <Text>
                   とにかくシステム・アプリを開発することが好きです！フロントもバックエンドもモバイルも！開発に関わることならなんでも好きです！！あと、どちらかというとモダンな
                   言語やフレームワークが好きです！
+                  最近だと、React・Nextjsが楽しくてやめれません。
                 </Text>
 
                 <Box h="50px"></Box>
-                <Text>休日や空いた時間には、個人アプリの開発やWebアプリ開発をしたり、qiitaやzennなどの記事を書いたり読んだり、ギターを弾いたりしています〜！</Text>
+                <Text>休日や空いた時間には、個人アプリの開発やWebアプリ開発をしたり、qiitaやzennなどの記事を読んだり（たまに書いたり・・・）、ギターを弾いたりしています〜！</Text>
 
                 <Box h="50px"></Box>
                 <Text>あと、好きなラーメン屋はうまやです。</Text>
@@ -64,18 +65,20 @@ const BlogPage: NextPage<Props> = ({ allPosts }) => (
                 <Divider></Divider>
                 <Box h="50px"></Box>
 
-                <Text>Flutterは、独学で一年、インターン先にて三ヶ月ほど触っており、一番好きなフレームワークでもあります。
-                  個人開発では、状態管理にRiverpod、StateNotifier、Freezedを使うことが多いです。またMVCモデルでほとんど作っています。
+                <Text>Flutterは、独学とインターン先にて触っており、僕が一番好きなフレームワークでもあります。
+                  状態管理にRiverpod、StateNotifier、Freezedを使うことが多いです。またMVCモデルでほとんど作っています。
                 </Text>
                 <Box h="30px"></Box>
-                <Text>もともと一年ほど独学でFlutterをしていたのですが、スキルアップのために参加したインターンにて、革命が起きました。インターンでの経験談は次のタブに記載しておりますので、
-                  ぜひご覧ください！
+                <Text>もともと一年ほど独学でFlutterをしていたのですが、スキルアップのために参加したインターンにて、
+                  自分のできなさを思い知り、日々奮闘中です・・・。
                 </Text>
                 <Box h="30px"></Box>
-                <Text>また、学内でFlutterによるアプリ開発チームを立ち上げ、勉強会やアプリ開発の企画、運営をさせていただいております。</Text>
+                <Text>また、学内でFlutterによるアプリ開発チームを立ち上げ、勉強会やアプリ開発の企画、運営をさせていただいております。
+                  このチームでは、主に先生用の業務ツールアプリなどを作ることから始め、色々なアプリも手掛けるようになってきております！
+                </Text>
 
                 <Box h="50px"></Box>
-                <Heading textAlign="center">React・Next.js</Heading>
+                <Heading textAlign="center">React・Nextjs</Heading>
                 <Divider></Divider>
                 <Box h="50px"></Box>
 

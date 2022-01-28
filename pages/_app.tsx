@@ -1,4 +1,5 @@
 import '../styles/global.css'
+import 'focus-visible/dist/focus-visible'; 
 
 
 import { ChakraProvider } from '@chakra-ui/react'
