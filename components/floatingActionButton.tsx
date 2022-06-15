@@ -15,7 +15,7 @@ export default function FloatingActrionButton() {
         <Box position="fixed" right="20px" bottom="40px">
 
             <VStack spacing='10px'>
-                <IconButton
+                {/* <IconButton
                     size="md"
                     boxShadow='xl'
                     rounded='md'
@@ -25,9 +25,9 @@ export default function FloatingActrionButton() {
                     fontSize='20px'
                     icon={<FaGithub />}
                     onClick={handleClick}
-                />
+                /> */}
 
-                <IconButton
+                {/* <IconButton
                     size="md"
                     boxShadow='xl'
                     rounded='md'
@@ -41,7 +41,7 @@ export default function FloatingActrionButton() {
                             e.preventDefault()
                             window.open('https://twitter.com/MukaigawaraYuki')
                         }}
-                />
+                /> */}
                 <HStack>
                     {/* <IconButton
                         // _focus={{_focus: "none"}} //周りの青いアウトラインが気になる場合に消す方法
@@ -55,7 +55,7 @@ export default function FloatingActrionButton() {
                         //  boxShadow='xl'
                         rounded='md'
                         //variant='outline'
-                        colorScheme='teal'
+                        colorScheme='gray'
                         aria-label='Call Sage'
                         fontSize='20px'
                         icon={<FaChevronCircleUp />}

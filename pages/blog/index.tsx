@@ -36,7 +36,7 @@ const blogPage = ({}) => (
           TECH-BLOG
         </Heading>
         <Heading fontSize={"30px"} m='6'>
-          技術的なことのアウトプット
+          日々のアウトプット
         </Heading>
         <Center h='250px' w='100%'></Center>
       </Box>

@@ -41,7 +41,7 @@ export default function AppBar({ children, title, description }: Props) {
   const { isOpen, onOpen, onClose } = useDisclosure()
   const pageTitle = title || "ホームページタイトル"
   return (
-    <Box position='sticky' top='0' zIndex='100' bg='' w='100%' h='60px'>
+    <Box position='sticky' top='0' zIndex='sticky' bg='gray.100' w='100%' h='60px'>
       <Flex direction='row' color='#38555a' align='center'>
         <Box ml='' w='' bg='' p={2} onClick={() => router.push("/")}>
           {/* <Heading size="lg">MUKAIGAWARA</Heading> */}
@@ -80,18 +80,14 @@ export default function AppBar({ children, title, description }: Props) {
         <Box p={2}>
           <Stack direction='row' spacing={4}>
             <HStack spacing='1px'>
-              <Button
-                color={"blue800"}
-                // variant='ghost'
-                onClick={() => router.push("/")}
-              >
-                ABOUTME
+              <Button color={"blue800"} variant='ghost' onClick={() => router.push("/")}>
+                ABOUT
               </Button>
-              <Button color={"blue800"} onClick={() => router.push("/blog")}>
-                BLOGS
+              <Button color={"blue800"} variant='ghost' onClick={() => router.push("/blog")}>
+                BLOG
               </Button>
-              <Button color={"blue800"} onClick={() => router.push("/work")}>
-                WORKS
+              <Button color={"blue800"} variant='ghost' onClick={() => router.push("/work")}>
+                WORK
               </Button>
               {/* <IconButton
                                 boxShadow='xl'
@@ -117,7 +113,7 @@ export default function AppBar({ children, title, description }: Props) {
                             /> */}
             </HStack>
 
-            <Button rightIcon={<FaFax />} color={"blue800"} onClick={() => router.push("/contact")}>
+            <Button rightIcon={<FaFax />} variant="ghost" color={"blue800"} onClick={() => router.push("/contact")}>
               CONTACT
             </Button>
           </Stack>
