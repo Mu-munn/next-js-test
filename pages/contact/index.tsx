@@ -17,7 +17,7 @@ export const getStaticProps = async () => {
     };
 };
 
-const Contact: NextPage<Props> = ({ allPosts }) => (
+const Contact = () => (
     <Box bg="gray.100" w="full" h="100vh" >
         <FloatingActrionButton />
         <AppBar />
@@ -27,9 +27,9 @@ const Contact: NextPage<Props> = ({ allPosts }) => (
             </Center>
             <Center>
                 <VStack spacing="30px" bg="white" w="70%" h="" top="300px" position="absolute" boxShadow='xl' p='9' rounded='md' >
-                    <Box h="50px"></Box>
+                    {/* <Box h="50px"></Box>
                     <Heading textAlign="center">ご質問等、お気軽にお声掛け下さい！<br />TwitterのDMでも問題ありません！</Heading>
-                    <Box h="50px"></Box>
+                    <Box h="50px"></Box> */}
                     <HStack>
                         <Icon as={FaEnvelope}>
 
