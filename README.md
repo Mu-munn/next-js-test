@@ -1,1 +1,1 @@
-This is a starter template for [Learn Next.js](https://nextjs.org/learn).
+ブログ機能（日々の学習記録を簡単に記録できる様にしたい）
